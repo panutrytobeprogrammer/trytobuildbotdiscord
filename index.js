@@ -43,7 +43,7 @@ client.on('messageCreate', msg=>{
         msg.reply('แปป เดะเขียนให้')
     }
     if (msg.content == '!help'){
-        msg.reply('Random generator : type "!random x x x x" (x are sth you want to random)\n')
+        msg.reply('Random generator : type "!random x x x x" (x are sth you want to random) \nZoom meeting link : พิมพ์ zoom หรือพิมพ์ชื่ออาจารย์เลย')
     }
     if (msg.content[0] == '!'){
         let msgar = msg.content.split(" ")
