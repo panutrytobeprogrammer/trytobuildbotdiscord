@@ -40,20 +40,20 @@ client.on('messageCreate', msg=>{
     if (msg.content == 'adv rs'){
         msg.reply('ใน Microsoft Team!!!!')
     }
-    if (msg.content == 'zoom'){
+    if (msg.content == '!zoom'){
         msg.reply('แปป เดะเขียนให้')
     }
     if (msg.content == '!help'){
-        msg.reply('Random generator : type "!random x x x x" (x are sth you want to random) \nZoom meeting link : พิมพ์ zoom หรือพิมพ์ชื่อวิชา \ngiav, math carto, sat survey, tech, adv rs, adv photo')
+        msg.reply('Random generator : type "!random x x x x" (x are sth you want to random) \nZoom meeting link : พิมพ์ !zoom หรือพิมพ์ชื่อวิชา \ngiav, math carto, sat survey, tech, adv rs, adv photo')
     }
     if (msg.content[0] == '!'){
-        let msgar = msg.content.split(" ")
-        let sth = []
-        for (let i = 1; i <= msgar.length; i++){
-            sth.push(msgar[i])
-        }
-        let l = sth.length
         if (msgar[0] == '!random'){
+            let msgar = msg.content.split(" ")
+            let sth = []
+            for (let i = 1; i <= msgar.length; i++){
+                sth.push(msgar[i])
+            }
+            let l = sth.length
             msg.reply(sth[random_sth(l)])
         }
     }
