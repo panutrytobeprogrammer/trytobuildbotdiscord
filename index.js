@@ -21,6 +21,7 @@ client.on('ready', ()=>{
 })
 
 client.on('messageCreate', msg=>{
+    msg.content = msg.content.toLowerCase()
     if (msg.content == 'giav'){
         msg.reply('Lecture on Monday : https://chula.zoom.us/j/99633531372?pwd=b0Jkd05nVXV3MHdlTHFEWU5iVGF0dz09#success\nLecture on Thursday : https://chula.zoom.us/j/96167012836?pwd=Wi9hQUI3eTVFMTN6SE14dVRJc0ZPZz09\nLab on Thursday : https://chula.zoom.us/j/98553123452?pwd=UFFMV1NpZzRpUU43SXRWV1h0NDVjdz09')
     }
