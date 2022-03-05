@@ -37,7 +37,7 @@ client.on('messageCreate', msg=>{
     
         }
         if (msgar[0] == '!help'){
-            msg.reply('Random generator : type "!random x x x x" (x are sth you want to random) \nZoom meeting link : พิมพ์ !zoom โลดดด มาทุกวิชาที่เป็น link เดิม (Math Carto กับ Sat Survey แม่งเปลี่ยน link ที่ครั้งเลย')
+            msg.reply('Random generator : type "!random x x x x" (x are sth you want to random) \nZoom meeting link : พิมพ์ !zoom โลดดด มาทุกวิชาที่เป็น link เดิม (Math Carto กับ Sat Survey แม่งเปลี่ยน link ทุกครั้งเลย)')
         }
         else {
             msg.reply("Noah's Ark ไม่มีคำสั่งนี้ค้าบ หากต้องการทราบคำสั่งพิมพ์ !help ได้เลยค้าบ 😊")
