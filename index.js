@@ -36,7 +36,15 @@ client.on('messageCreate', msg=>{
         } else if (msgar[0] == '!help'){
             msg.reply('Random generator : type "!random x x x x" (x are sth you want to random) \nZoom meeting link : พิมพ์ !zoom โลดดด มาทุกวิชาที่เป็น link เดิม (Math Carto กับ Sat Survey แม่งเปลี่ยน link ทุกครั้งเลย)')
         } else if (msgar[0] == '!dev'){
-            msg.reply("This command is coming soon, Noah's Ark is developing")
+            if(msg.member.voiceChannel) {
+                msg.member.voiceChannel.join()
+                .then(connection => {
+                    msg.reply('I have join to server')
+                 })
+                 .catch(console.log)
+            } else {
+                msg.reply("You need to join to Voice Channel")
+            }
         } else {
             msg.reply("Noah's Ark ไม่มีคำสั่งนี้ค้าบ หากต้องการทราบคำสั่งพิมพ์ !help ได้เลยค้าบ 😊")
         }
