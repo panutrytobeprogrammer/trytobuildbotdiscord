@@ -45,7 +45,7 @@ client.on('messageCreate', msg=>{
                  })
                  .catch(console.log)
             } else {
-                msg.reply("You need to join to Voice Channel")
+                msg.reply("You need to join to Voice Channel!")
             }
         } else {
             msg.reply("Noah's Ark ไม่มีคำสั่งนี้ค้าบ หากต้องการทราบคำสั่งพิมพ์ !help ได้เลยค้าบ 😊")
